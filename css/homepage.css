@@ -108,22 +108,14 @@ h3 {
     margin-left: 10px;
     font-size: 25px;
 }
-
- footer div button {
-    margin-left: 10px;
-    display: flex;
-padding: 30px 20px 20px 30px;
-    
+.one {
+    margin-right: 20px;
+    display: center;
 }
-footer div {
-    padding: 20px;
+
+.two {
+    padding:40px;
+    margin-right: 80px;
    
-
-}
-p {
-    font-size: 20px;
-    font-weight: bold;
-    bottom:80px;
-  
 }
 
