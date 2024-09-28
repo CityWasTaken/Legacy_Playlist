@@ -1,15 +1,18 @@
-('iframe1');
-const iframe2 = document.querySelectorAll('iframe2');
-const paragraph = document.createElement('p1');
 
+const signInBtn = document.querySelector('#signIn');
+const membersSection = document.querySelector('#members');
 
-paragraph.textContent = 'Taylor Swift, You Belong With Me, Billie Eilish, What Was I Made For';
-
-
-iframes.forEach(iframe => {
-    iframe.parentNode.insertBefore(paragraph.cloneNode(true), iframe.nextSibling);
+signInBtn.addEventListener('click', () => {
+    const memberName = prompt('Enter member name:');
+    if (memberName) {
+        const memberItem = document.createElement('li');
+        memberItem.textContent = memberName;
+        membersSection.appendChild(memberItem);
+    }
 });
-=======
+
+
+
 const addMusicBtn = document.querySelector('#addMusic');
 const darkModeBtn = document.querySelector('#toggle-btn');
 const btnColor = document.querySelectorAll('.buttons')
@@ -61,4 +64,4 @@ function pageLoad() {
 
 
 pageLoad();
->>>>>>> 678245c8b053d7a123444cf694bb57f9246e2138
+
