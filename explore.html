@@ -12,29 +12,61 @@
     </head>
 
     <body>
-        <!-- This hero section will house the logo and banner that will show at the top of every page -->
-        <section class="hero">
-            <h1>Welcome to YOUR Legacy</h1>
+
+        <section>
+            <button id="toggle-btn" class="btn btn-outline-warning me-3 buttons">Toggle Dark Mode</button>
         </section>
-
-        <header class="header-container">
-
-            <!-- This will be the navigation section to change between pages of the application -->
-            <nav>
-                <a href="#home">Home</a>
-                <a class="active" href="#explore">Explore</a>
-                <a href="#my-music">My Music</a>
-            </nav>
+        
+        <header>
+            <h1>Legacy Playlist</h1>
+            <h2>Welcome to YOUR Legacy</h2>
         </header>
+
+        <nav>
+            <button class="btn btn-outline-warning me-3 buttons">Home
+            </button>
+            <button class="btn btn-outline-warning me-3 buttons">
+                <a href="./explore.html">Explore</a>
+            </button>
+            <button class="btn btn-outline-warning me-3 buttons">
+                <a href="./playlist.html">My Music</a>
+            </button>
+        </nav>
+
 
         <!-- This will hold the main contents of this page - including playlists, artists, albums, genres, and songs -->
         <main class="explore-content">
-            <section id="new-releases">
-                <article id="new-releases-article">
-                    <h1 id="new-releases-title">New Releases</h1>
-                </article>
+            
+            <section class="container">
+                <h1 class="row text-center">New Releases</h1>
             </section>
-            <div class="container">
+            <div class="container p-5">
+                <section class="row text-center m-3">
+                    <article class="col">
+                        <div>
+                            <button class="m-3">New Release 1</button>
+                        </div>
+                        <div>
+                            <button class="m-3">New Release 1</button>
+                        </div>
+                        <div>
+                            <button class="m-3">New Release 1</button>
+                        </div>
+                    </article>
+                    <article class="col">
+                        <div>
+                            <button class="m-3">New Release 1</button>
+                        </div>
+                        <div>
+                            <button class="m-3">New Release 1</button>
+                        </div>
+                        <div>
+                            <button class="m-3">New Release 1</button>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <div class="container p-5">
                 <section class="row text-center">
                     <article class="col">
                         <h1>Browse Artists</h1>
@@ -76,6 +108,10 @@
             </div>
         </main>
 
+        <script src="./js/city.js"></script>
+        <script src="./js/matt.js"></script>
+        <script src="./js//oshea.js"></script>
+        <script src="./js/razieh.js"></script>
         <script src="./js/script.js"></script>
     </body>
 </html>
