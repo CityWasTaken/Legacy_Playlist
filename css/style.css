@@ -22,29 +22,3 @@ main {
     top: 45px;
     right: 45px;
 }
-
-/* My Music styles */
-.dark {
-    background-color: #333333;
-    color: #dfd261;
-}
-
-
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20%;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-#toggle-btn {
-    position: fixed;
-    top: 45px;
-    right: 45px;
-}
