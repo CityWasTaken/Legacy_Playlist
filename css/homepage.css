@@ -110,7 +110,7 @@ h3 {
 }
 .one {
     margin-right: 20px;
-    display: center;
+   
 }
 
 .two {
@@ -118,4 +118,5 @@ h3 {
     margin-right: 80px;
    
 }
+.one .two
 
