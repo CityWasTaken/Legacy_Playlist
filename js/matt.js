@@ -1,3 +1,5 @@
+const songCardsContainer = document.getElementById("songCardsContainer");
+
 function createSongCard(songTitle, artist, genre) {
     const songCard = document.createElement("div");
     songCard.className = "col-1 card";
@@ -12,3 +14,12 @@ function createSongCard(songTitle, artist, genre) {
     `;
     songCardsContainer.appendChild(songCard);
 }
+
+function loadSongs() {
+    const songs = JSON.parse(localStorage.getItem('songs')) || [];
+    songs.forEach(song => {
+        createSongCard(song.title, song.artist, song.genre);
+    });
+}
+
+loadSongs();

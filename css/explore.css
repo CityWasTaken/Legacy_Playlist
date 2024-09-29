@@ -62,15 +62,19 @@
     margin: 2.5rem 1.5rem 1.5rem 5rem;
 }
 
-.explore-content {
+/* .explore-content {
     margin: 2.5rem;
+} */
+
+#browse-section {
+    margin: 0 !important;
 }
 
-.explore-content div section {
+/* .explore-content div section {
     border: solid 5px;
     border-color: #dfd261;
     border-radius: 10px;
-}
+} */
 
 .my-music-content section {
     margin: 3rem;
@@ -142,4 +146,39 @@
     border: 4px solid gold;
     padding: 10px;
     margin: 20px 20px;
+}
+
+.container section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px !important;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+body {
+    background-color: #282424;
+    /* Light background for contrast */
+    color: #333;
+    /* Dark text for readability */
+    line-height: 1.6;
+}
+
+#songCardsContainer div {
+    margin: 24px;
+}
+
+#songCardsContainer {
+    padding: 2.5rem;
+}
+
+#border-control {
+    margin: 20px !important;
 }
