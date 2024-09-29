@@ -1,4 +1,24 @@
 /* Explore Page styles */
+.dark {
+    background-color: #333333;
+    color: #dfd261;
+}
+
+.center-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
 .hero {
     display: grid;
     height: 10rem;
