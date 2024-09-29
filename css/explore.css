@@ -1,4 +1,24 @@
 /* Explore Page styles */
+.dark {
+    background-color: #333333;
+    color: #dfd261;
+}
+
+.center-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
 .hero {
     display: grid;
     height: 10rem;
@@ -11,7 +31,7 @@
 .hero h1 {
     justify-self: center;
     align-self: center;
-    color: gold;
+    color: #dfd261;
     font-size: 3rem;  /* Adjust the font-size of our h1 text*/
 }
 
@@ -23,7 +43,7 @@
 }
 
 .header-container nav a {
-    color: gold;
+    color: #dfd261;
     font-size: 1.5rem;
     text-decoration: none;
 }
@@ -46,6 +66,12 @@
     margin: 2.5rem;
 }
 
+.explore-content div section {
+    border: solid 5px;
+    border-color: #dfd261;
+    border-radius: 10px;
+}
+
 .my-music-content section {
     margin: 3rem;
     padding: 50px 70px;
@@ -58,7 +84,7 @@
 }
 
 .my-music-content section button {
-    background-color: gold;
+    background-color: #dfd261;
     border-width: 5px;
     border-radius: 10px;
     border-color: black;
@@ -71,13 +97,13 @@
 }
 
 .my-music-content section button:hover {
-    color: gold;
+    color: #dfd261;
     background-color: black;
 }
 
 .header-container nav a:active {
     background-color: black;
-    color: gold;
+    color: #dfd261;
 }
 
 #new-releases {
@@ -106,4 +132,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.navbar a {
+    color: #ffc107;
+}
+
+.playlist-border {
+    border: 4px solid gold;
+    padding: 10px;
+    margin: 20px 20px;
 }
