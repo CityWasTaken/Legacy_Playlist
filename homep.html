@@ -10,62 +10,77 @@
 </head>
 
 <body>
-
-    <section>
-        <button id="toggle-btn" class="btn btn-outline-warning me-3 buttons">Toggle Dark Mode</button>
-    </section>
-    
     <header>
-        <h1>Legacy Playlist</h1>
-        <h2>Welcome to YOUR Legacy</h2>
-    </header>
+        <h1 style="position: absolute; top: 0; left: 50%; transform: translateX(-50%);">Welcome to YOUR Legacy</h1>
+        <section>
+            <button id="signInBtn">Sign In</button>
+        </section>
         <nav>
             <button class="btn btn-outline-warning me-3 buttons">Home
             </button>
-            <button class="btn btn-outline-warning me-3 buttons">
-                <a href="./explore.html">Explore</a>
+            <button class="btn btn-outline-warning me-3 buttons">Explore
             </button>
-            <button class="btn btn-outline-warning me-3 buttons">
-                <a href="./playlist.html">My Music</a>
+            <button class="btn btn-outline-warning me-3 buttons">My Music
             </button>
         </nav>
     </header>
     <main>
-        <h2>Playlists</h2>
-        <div>
 
-            <button style="width: 200px; height: 200px;">
+        <h2>Playlists</h2>
+        <div class="playlist-container">
+            <button class="playlist-container button" style="width: 200px; height: 200px;">
                 <img src="images/pexels-nietjuh-934067 (1).jpg" alt="Placeholder Image"
                     style="width: 100%; height: 100%;">Top Songs Pop
             </button>
 
-            <button style="width: 200px; height: 200px;">
+            <button class="playlist-container button" style="width: 200px; height: 200px;">
                 <img src="images/pexels-suzyhazelwood-2718645.jpg" alt="Placeholder Image"
                     style="width: 100%; height: 100%;">90S
             </button>
-            <button style="width: 200px; height: 200px;">
-                <img src="images/pexels-thibault-trillet-44912-167491.jpg" alt="Placeholder Image"
-                    style="width: 100%; height: 100%;">Non Stop Party
+            <button class="playlist-container button" style="width: 200px; height: 200px;">
+                <img src="images/Billie.jpg" alt="Placeholder Image" style="width: 100%; height: 100%;">Non Stop Party
             </button>
-            <button style="width: 200px; height: 200px;">
+            <button class="playlist-container button" style="width: 200px; height: 200px;">
                 <img src="images/pexels-giulianogiudici-15599185.jpg" alt="Placeholder Image"
                     style="width: 100%; height: 100%;">Top Songs Hip Hop
             </button>
-            <button style="width: 200px; height: 200px;">
+            <button class="playlist-container button" style="width: 200px; height: 200px;">
                 <img src="images/pexels-jovan-popovic-1401806-28496565.jpg" alt="Placeholder Image"
                     style="width: 100%; height: 100%;">cafe
             </button>
 
         </div>
-    </main>
-    <footer class="footer">
         <h3>Featured</h3>
-    </footer>
+        <div class="featured-gallery-border">
 
-    <script src="./js/city.js"></script>
-    <script src="./js/matt.js"></script>
-    <script src="./js//oshea.js"></script>
-    <script src="./js/razieh.js"></script>
+            <div class="image-cover">
+                <img src="./images/billie_eilish_is_standing_in_front_of_brown_curtain_wearing_red_dress_with_orange_head_covered_jacket_hd_celebrities.jpg"
+                    alt="Image 1">
+
+            </div>
+
+            <div class="image-cover">
+                <img src="./images/20230124_1674560682-534.jpeg" alt="Image 2">
+
+            </div>
+
+        </div>
+        <div id="name-container" class="name-container">
+            <div class="name">
+                <a href="song.html">What Was I Made for?</a>
+                <p>Billie Eilish</p>
+            </div>
+        </div>
+
+        <div class="name">
+            <a href="song.html">You Belong With Me</a>
+            <p>Taylor Swift</p>
+        </div>
+        </div>
+
+    </main>
+
+
     <script src="./js/script.js"></script>
 </body>
 
