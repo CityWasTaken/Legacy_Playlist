@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Legacy Playlist</title>
 </head>
+
 <body>
     <section>
         <button id="toggle-btn" class="btn btn-outline-warning me-3 buttons">Toggle Dark Mode</button>
@@ -31,38 +33,38 @@
     </nav>
 
     <main class="container-fluid">
-    
-    <div id="songModal" class="modal">
-        <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <h2>Add a New Song</h2>
-        <form id="songForm">
-            <label for="songTitle">Song Title:</label>
-            <input type="text" id="songTitle" required>
-            
-            <label for="artist">Artist:</label>
-            <input type="text" id="artist" required>
-            
-            <label for="genre">Genre:</label>
-            <input type="text" id="genre" required>
-            
-            <button class="btn btn-outline-warning" type="submit">Add Song</button>
-        </form>
-    </div>
-</div>
+
+        <div id="songModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Add a New Song</h2>
+                <form id="songForm">
+                    <label for="songTitle">Song Title:</label>
+                    <input type="text" id="songTitle" required>
+
+                    <label for="artist">Artist:</label>
+                    <input type="text" id="artist" required>
+
+                    <label for="genre">Genre:</label>
+                    <input type="text" id="genre" required>
+
+                    <button class="btn btn-outline-warning" type="submit">Add Song</button>
+                </form>
+            </div>
+        </div>
 
 
- <div class="d-grid gap-2 col-3 mx-auto">
-    <button id="open-modal-btn" class="btn btn-outline-warning btn-sm">Add a Song</button>
-</div>
+        <div class="d-grid gap-2 col-3 mx-auto">
+            <button id="open-modal-btn" class="btn btn-outline-warning btn-sm">Add a Song</button>
+        </div>
 
-<section>
-    <h3>Songs</h3>
+        <section>
+            <h3>Songs</h3>
 
-<div id="songCardsContainer" class="d-flex flex-wrap"></div>
+            <div id="songCardsContainer" class="d-flex flex-wrap"></div>
 
-<button id="reset-btn" class="btn btn-danger position-absolute bottom-0 end-0 m-3">Reset Songs</button>
-</section>
+            <button id="reset-btn" class="btn btn-danger position-absolute bottom-0 end-0 m-3">Reset Songs</button>
+        </section>
         <!-- <h3>Songs (add music modal)</h3>
         <section class="row">
             <div class="col-1 card" style="width: 18rem;">
@@ -82,4 +84,5 @@
     <script src="./js/script.js"></script>
     <script src="js/matt.js"></script>
 </body>
+
 </html>
