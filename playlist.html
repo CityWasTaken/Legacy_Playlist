@@ -31,7 +31,39 @@
     </nav>
 
     <main class="container-fluid">
-        <h3>Songs (add music modal)</h3>
+    
+    <div id="songModal" class="modal">
+        <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Add a New Song</h2>
+        <form id="songForm">
+            <label for="songTitle">Song Title:</label>
+            <input type="text" id="songTitle" required>
+            
+            <label for="artist">Artist:</label>
+            <input type="text" id="artist" required>
+            
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" required>
+            
+            <button class="btn btn-outline-warning" type="submit">Add Song</button>
+        </form>
+    </div>
+</div>
+
+
+ <div class="d-grid gap-2 col-3 mx-auto">
+    <button id="open-modal-btn" class="btn btn-outline-warning btn-sm">Add a Song</button>
+</div>
+
+<section>
+    <h3>Songs</h3>
+
+<div id="songCardsContainer" class="d-flex flex-wrap"></div>
+
+<button id="reset-btn" class="btn btn-danger position-absolute bottom-0 end-0 m-3">Reset Songs</button>
+</section>
+        <!-- <h3>Songs (add music modal)</h3>
         <section class="row">
             <div class="col-1 card" style="width: 18rem;">
                 <img src="..." class="card-img-top" alt="...">
@@ -41,29 +73,13 @@
                   <p class="card-text">Genre</p>
                 </div>
               </div>
-              <div class="col-1 card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Song Title</p>
-                  <p class="card-text">Artist</p>
-                  <p class="card-text">Genre</p>
-                </div>
-              </div>
-              <div class="col-1 card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Song Title</p>
-                  <p class="card-text">Artist</p>
-                  <p class="card-text">Genre</p>
-                </div>
-              </div>
-        </section>
+        </section> -->
     </main>
 
     <script src="./js/city.js"></script>
-    <script src="./js/matt.js"></script>
     <script src="./js//oshea.js"></script>
     <script src="./js/razieh.js"></script>
     <script src="./js/script.js"></script>
+    <script src="js/matt.js"></script>
 </body>
 </html>
