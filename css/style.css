@@ -3,7 +3,13 @@
     color: #dfd261;
 }
 
+.dark a {
+    color: rgb(0, 0, 0);
+}
 
+a {
+    color: black;
+}
 
 nav {
     display: flex;
