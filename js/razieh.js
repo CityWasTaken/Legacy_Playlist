@@ -1,6 +1,3 @@
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
    
     const signInBtn = document.getElementById('signInBtn');

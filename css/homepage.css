@@ -1,20 +1,12 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #282424;
-    /* Light background for contrast */
-    color: #333;
-    /* Dark text for readability */
-    line-height: 1.6;
-}
+} */
 
 /* Header Styling */
-header {
+/* header {
     background-color: #333;
     color: #fff;
     padding: 20px;
@@ -28,9 +20,9 @@ h1 {
     text-transform: uppercase;
     font-weight: bold;
     padding: 0;
-}
+} */
 
-nav {
+/* nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,9 +49,9 @@ nav button {
 nav button:hover {
     background-color: #ff8c00;
     color: #fff;
-}
+} */
 
-#signInBtn {
+/* #signInBtn {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -74,7 +66,7 @@ nav button:hover {
 
 #signInBtn:hover {
     background-color: #ffa733;
-}
+} */
 
 /* Main Section Styling */
 main {
@@ -87,9 +79,7 @@ main {
 }
 
 h2 {
-    font-size: 28px;
     margin-bottom: 20px;
-    color: #444;
 }
 
 div.playlist-container {
@@ -126,11 +116,8 @@ div.playlist-container button:hover {
 }
 
 h3 {
-    font-size: 28px;
     margin-bottom: 0px;
     margin-top: 40px;
-    color: #444;
-
 }
 
 /* Featured Section */
@@ -198,6 +185,10 @@ h3 {
 
 }
 
+.new-flex {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
