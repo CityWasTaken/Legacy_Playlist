@@ -4,55 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legacy Playlist</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/resets.css">
     <link rel="stylesheet" href="./css/homepage.css">
     <link rel="stylesheet" href="./css/style.css">
+    <title>Legacy Playlist</title>
 </head>
 
 <body>
+    <section>
+        <button id="toggle-btn" class="btn btn-outline-warning me-3 buttons">Toggle Dark Mode</button>
+    </section>
+
     <header>
-        <h1 style="position: absolute; top: 0; left: 50%; transform: translateX(-50%);">Welcome to YOUR Legacy</h1>
-        <section>
-            <button id="signInBtn">Sign In</button>
-        </section>
-        <nav>
-            <button class="btn btn-outline-warning me-3 buttons">
-                <a href="./homep.html">Home</a>
-            </button>
-            <button class="btn btn-outline-warning me-3 buttons">
-                <a href="./explore.html">Explore</a>
-            </button>
-            <button class="btn btn-outline-warning me-3 buttons">
-                <a href="./playlist.html">My Music</a>
-            </button>
-        </nav>
+        <h1>Legacy Playlist</h1>
+        <h2>Welcome to YOUR Legacy</h2>
     </header>
+    <nav>
+        <button class="btn btn-outline-warning me-3 buttons">
+            <a href="./homep.html">Home</a>
+        </button>
+        <button class="btn btn-outline-warning me-3 buttons">
+            <a href="./explore.html">Explore</a>
+        </button>
+        <button class="btn btn-outline-warning me-3 buttons">
+            <a href="./playlist.html">My Music</a>
+        </button>
+    </nav>
     <main>
 
-        <h2>Playlists</h2>
-        <div class="playlist-container">
-            <button class="playlist-container button" style="width: 200px; height: 200px;">
-                <img src="images/pexels-nietjuh-934067 (1).jpg" alt="Placeholder Image"
-                    style="width: 100%; height: 100%;">Top Songs Pop
-            </button>
-
-            <button class="playlist-container button" style="width: 200px; height: 200px;">
-                <img src="images/pexels-suzyhazelwood-2718645.jpg" alt="Placeholder Image"
-                    style="width: 100%; height: 100%;">90S
-            </button>
-            <button class="playlist-container button" style="width: 200px; height: 200px;">
-                <img src="images/Billie.jpg" alt="Placeholder Image" style="width: 100%; height: 100%;">Non Stop Party
-            </button>
-            <button class="playlist-container button" style="width: 200px; height: 200px;">
-                <img src="images/pexels-giulianogiudici-15599185.jpg" alt="Placeholder Image"
-                    style="width: 100%; height: 100%;">Top Songs Hip Hop
-            </button>
-            <button class="playlist-container button" style="width: 200px; height: 200px;">
-                <img src="images/pexels-jovan-popovic-1401806-28496565.jpg" alt="Placeholder Image"
-                    style="width: 100%; height: 100%;">cafe
-            </button>
-
-        </div>
+        <h2>Playlist</h2>
+        <section id="newly-added" class="playlist-border">
+            <div id="songCardsContainer" class="d-flex flex-wrap">
+            </div>
+        </section>
         <h3>Featured</h3>
         <div class="featured-gallery-border">
 
@@ -79,11 +65,12 @@
             <a href="song.html">You Belong With Me</a>
             <p>Taylor Swift</p>
         </div>
-        </div>
 
     </main>
 
-
+    <script src="./js/city.js"></script>
+    <script src="./js/matt.js"></script>
+    <script src="./js/razieh.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

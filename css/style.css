@@ -40,6 +40,6 @@ body.dark .playlist-border {
     border-color: #ffc107;
 }
 
-.dark h2 {
+.dark h2, .dark h3 {
     color: #ffc107;
 }
