@@ -5,37 +5,37 @@ const songForm = document.getElementById("songForm");
 const songCardsContainer = document.getElementById("songCardsContainer");
 const resetButton = document.getElementById("reset-btn");
 
-function createSongCard(songTitle, artist, genre) {
+function createSongCard(imageLink, songTitle, artist, genre) {
     const songCard = document.createElement("div");
     songCard.className = "col-1 card";
     songCard.style.width = "18rem";
     songCard.innerHTML = `
-        <img src="..." class="card-img-top" alt="...">
+        <img src="${imageLink}" class="card-img-top" alt="...">
         <div class="card-body">
             <p class="card-text"><strong>Title:</strong> ${songTitle}</p>
             <p class="card-text"><strong>Artist:</strong> ${artist}</p>
             <p class="card-text"><strong>Genre:</strong> ${genre}</p>
         </div>
     `;
-    songCardsContainer.appendChild(songCard);
+    document.getElementById("songCardsContainer").appendChild(songCard);
 }
 
 function loadSongs() {
     const songs = JSON.parse(localStorage.getItem('songs')) || [];
     songs.forEach(song => {
-        createSongCard(song.title, song.artist, song.genre);
+        createSongCard(song.imageLink, song.title, song.artist, song.genre);
     });
 }
 
-function saveSong(songTitle, artist, genre) {
+function saveSong(imageLink, songTitle, artist, genre) {
     const songs = JSON.parse(localStorage.getItem('songs')) || [];
-    songs.push({ title: songTitle, artist: artist, genre: genre });
+    songs.push({ imageLink: imageLink, title: songTitle, artist: artist, genre: genre });
     localStorage.setItem('songs', JSON.stringify(songs));
 }
 
 function clearSongs() {
     localStorage.removeItem('songs');
-    songCardsContainer.innerHTML = '';
+    document.getElementById("songCardsContainer").innerHTML = '';
 }
 
 openModalButton.addEventListener('click', function() {
@@ -55,13 +55,14 @@ window.addEventListener('click', function(event) {
 songForm.addEventListener('submit', function(event) {
     event.preventDefault();
     
+    const imageLink = document.getElementById("imageLink").value;
     const songTitle = document.getElementById("songTitle").value;
     const artist = document.getElementById("artist").value;
     const genre = document.getElementById("genre").value;
 
-    createSongCard(songTitle, artist, genre);
+    createSongCard(imageLink, songTitle, artist, genre);
 
-    saveSong(songTitle, artist, genre);
+    saveSong(imageLink, songTitle, artist, genre);
 
     songForm.reset();
 
