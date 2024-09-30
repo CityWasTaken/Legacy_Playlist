@@ -18,6 +18,15 @@ N/A
 
 This web app is for storing information on music so you can never forget about it again! How could you when you have all its information? When you are told the name of a song and who sings it but you cant add it to your major music playform for whatever reason, Legacy Playlist has your back. When low bandwidth required, you can get the name or artist of any song you stored. Simple, but you'd be surprised how often this happens.
 
+
+## Acceptance Criteria
+
+Given I want to store information on music
+When I open the webpage
+Then I am presented a homescreen that will show all recent songs I stored
+When I click the explore button
+Then I am able to view the newer songs that I have entered information on
+
 ## Credits
 
 Matthew Morgan
