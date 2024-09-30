@@ -5,14 +5,6 @@
     font-family: Arial, sans-serif;
 }
 
-body {
-    background-color: #282424;
-    /* Light background for contrast */
-    color: #333;
-    /* Dark text for readability */
-    line-height: 1.6;
-}
-
 /* Header Styling */
 header {
     background-color: #333;
@@ -59,7 +51,7 @@ nav button:hover {
     color: #fff;
 }
 
-#signInBtn {
+/* #signInBtn {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -74,7 +66,7 @@ nav button:hover {
 
 #signInBtn:hover {
     background-color: #ffa733;
-}
+} */
 
 /* Main Section Styling */
 main {
