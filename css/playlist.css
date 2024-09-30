@@ -9,11 +9,15 @@
 }
 
 .modal-content {
-    background-color: #333333;
     margin: 15%; 
     padding: 20px;
-    border: 1px solid gold;
     width: 70%; 
+}
+
+.dark .modal-content {
+    background-color: #333333;
+    border: 1px solid gold;
+    color: gold;
 }
 
 #open-modal-btn {
