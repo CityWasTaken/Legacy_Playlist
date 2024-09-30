@@ -1,5 +1,3 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-
     const modal = document.getElementById("songModal");
     const openModalButton = document.getElementById("open-modal-btn");
     const closeButton = document.querySelector(".close-button");
@@ -76,4 +74,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     loadSongs();
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+
 });
