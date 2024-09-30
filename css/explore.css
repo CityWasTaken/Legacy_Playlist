@@ -1,10 +1,6 @@
 /* Explore Page styles */
-.dark {
-    background-color: #333333;
-    color: #dfd261;
-}
 
-.center-text {
+/* .center-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,12 +8,6 @@
     padding: 10px;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px;
-}
 
 .hero {
     display: grid;
@@ -33,34 +23,13 @@
     align-self: center;
     color: #dfd261;
     font-size: 3rem;  /* Adjust the font-size of our h1 text*/
-}
+/* } */
 
-.header-container nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #898989;
-}
 
-.header-container nav a {
-    color: #dfd261;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
 
-.header-container nav a:hover {
-    text-decoration: underline;
-    color: black;
-}
-
-.header-container nav a:active {
-    text-decoration: underline;
-    text-transform: uppercase;
-}
-
-.my-music-content {
+/* .my-music-content {
     margin: 2.5rem 1.5rem 1.5rem 5rem;
-}
+} */
 
 /* .explore-content {
     margin: 2.5rem;
@@ -76,7 +45,7 @@
     border-radius: 10px;
 } */
 
-.my-music-content section {
+/* .my-music-content section {
     margin: 3rem;
     padding: 50px 70px;
     background-color: #474747;
@@ -103,12 +72,9 @@
 .my-music-content section button:hover {
     color: #dfd261;
     background-color: black;
-}
+} */
 
-.header-container nav a:active {
-    background-color: black;
-    color: #dfd261;
-}
+
 
 #new-releases {
     display: flex;
@@ -138,15 +104,6 @@
     justify-content: space-around;
 }
 
-.navbar a {
-    color: #ffc107;
-}
-
-.playlist-border {
-    border: 4px solid gold;
-    padding: 10px;
-    margin: 20px 20px;
-}
 
 .container section {
     display: flex;
@@ -163,13 +120,10 @@ main {
     border-radius: 10px;
 }
 
-body {
-    background-color: #282424;
-    /* Light background for contrast */
-    color: #333;
-    /* Dark text for readability */
-    line-height: 1.6;
+main.dark {
+    color: #000000;
 }
+
 
 #songCardsContainer div {
     margin: 24px;

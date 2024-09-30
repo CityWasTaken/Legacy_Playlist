@@ -44,7 +44,7 @@ function pageLoad() {
 
 
     darkModeBtn.addEventListener('click', toggleDarkMode);
-    // addBtn.addEventListener('click', addStudent);
+    
 }
 
 
